@@ -12,7 +12,7 @@ export interface ActiveDimension<T extends DimensionTypes> extends Dimension<T> 
 export interface Category {
     id: string;
     name: string;
-    parent: string;
+    parent?: string;
     dimension: Dimension<DimensionTypes>[]
 }
 
