@@ -1,0 +1,64 @@
+{
+    "dimensions": [
+        {
+            "name": "subject",
+            "type": "number",
+            "possibleValues": [
+                100307,
+                100408
+            ]
+        },
+        {
+            "name": "view",
+            "type": "string",
+            "possibleValues": [
+                "axial",
+                "coronal",
+                "sagittal"
+            ]
+        },
+        {
+            "name": "contrast",
+            "type": "name",
+            "possibleValues": [
+                "T1w",
+                "T2w"
+            ]
+        },
+        {
+            "name": "slice",
+            "type": "number",
+            "possibleValues": [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "name": "HCP Data",
+            "id": "hcp",
+            "dimensions": [
+                "subject",
+                "view",
+                "contrast",
+                "slice"
+            ],
+            "values": [
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 0,
+                        "contrast": "T1w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-axial_slice-0_T1w.svg"
+                    }
+                }
+            ]
+        }
+    ]
+}
