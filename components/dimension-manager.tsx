@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ActiveDimension, DimensionTypes } from "../interfaces/dimensions"
+import { ActiveDimension, Category, DimensionTypes } from "../interfaces/dimensions"
 import { CategorySelector } from "./category-selector"
 
 type ActiveDimensions = ActiveDimension<DimensionTypes>[] | undefined;
