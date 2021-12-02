@@ -47,7 +47,7 @@ class CategorySelector extends React.Component {
         );
         return (
             <nav>
-                <ul className="navbar-nav flex-column">
+                <ul className="nav nav-pills flex-column">
                     <li><span className="navbar-brand">Categories</span></li>
                     {categoryItems}
                 </ul>
