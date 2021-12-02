@@ -3,19 +3,20 @@ import React from "react"
 
 interface CategorySelectorProps {
     categories: Category[];
+    setActiveDimensions;
 }
 
 interface CategoryOptionProps {
     category: Category;
     active: boolean;
-    setActive;
+    setActiveCategory;
 }
 
 class CategoryOption extends React.Component {
     render() {
         return (
             <li className="nav-item">
-                <a className={"nav-link " + (this.props.active ? "active" : "")} href="#" onClick={(e) => this.props.setActive(this.props.category, e)}>
+                <a className={"nav-link " + (this.props.active ? "active" : "")} href="#" onClick={(e) => this.props.setActiveCategory(this.props.category, e)}>
                     {this.props.category.name}
                 </a>
             </li>
@@ -33,11 +34,12 @@ class CategorySelector extends React.Component {
 
     changeActive(category) {
         this.setState({activeCategory: category});
+        this.props.setActiveDimensions(category.dimensions.map((dimension) => {return {value: dimension.possibleValues[0], ...dimension}}))
     }
 
     render() {
         const categoryItems = this.props.categories.map((category) =>
-            <CategoryOption category={category} parent={this} setActive={this.changeActive} active={category === this.state.activeCategory} />
+            <CategoryOption category={category} parent={this} setActiveCategory={this.changeActive} active={category === this.state.activeCategory} />
         );
         return (
             <nav>

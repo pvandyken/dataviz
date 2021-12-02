@@ -13,7 +13,7 @@ export interface Category {
     id: string;
     name: string;
     parent?: string;
-    dimension: Dimension<DimensionTypes>[]
+    dimensions: Dimension<DimensionTypes>[]
 }
 
 
