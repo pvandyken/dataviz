@@ -19,7 +19,7 @@ class CategoryOption extends React.Component {
     render() {
         return (
             <li className="nav-item">
-                <a className={"nav-link " + (this.state.active ? "active" : "")} href="#">
+                <a className={"nav-link " + (this.state.active ? "active" : "")} href="#" onClick={(e) => this.props.parent.changeActive(this, e)}>
                     {this.props.category.name}
                 </a>
             </li>
@@ -35,10 +35,10 @@ class CategorySelector extends React.Component {
 
     changeActive(categoryOption: CategoryOption) {
         if (this.state.activeCategory) {
-            this.state.activeCategory.state.active = false;
+            this.state.activeCategory.setState({active: false});
         }
-        categoryOption.state.active = true;
-        this.state.activeCategory = categoryOption;
+        categoryOption.setState({active: true});
+        this.setState({activeCategory: categoryOption});
     }
 
     render() {
