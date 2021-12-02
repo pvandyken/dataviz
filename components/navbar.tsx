@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export const Navbar = () => {
 <<<<<<< HEAD
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,8 +38,35 @@ export const Navbar = () => {
 
 
 =======
+=======
+import { useState } from "react"
+import {ActiveDimension, DimensionTypes} from "../interfaces/dimensions"
+import {DimSelector} from "./dimensionsSelector"
+>>>>>>> 6a2a35f... Prog on NavBar
 
-    return "Hello world"
+interface NavBarProps {
+    activeDimensions:  ActiveDimension<DimensionTypes>[]
+
+}
+
+export const Navbar = (props: NavBarProps) => {
+    const [val, setVal] = useState(props.activeDimensions[0].value)
+    const setValue = (e) => {
+        setVal(e.target.value)
+    }
+
+    return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div className="container-fluid justify-content-end">
+          <ul className="navbar-nav">
+            
+                {props.activeDimensions.map(dim =>{
+                    return <DimSelector dimension={dim}/>
+                })}      
+          </ul>
+    </div>
+  </nav>
+  )
     
 }
 >>>>>>> 9e5c386... nav bar added
