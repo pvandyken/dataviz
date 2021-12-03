@@ -19,6 +19,9 @@ export class Slice<T extends DimensionTypes> {
         /**
          * Test if slice contains value
          */
+        if (!this.value) {
+            return true
+        }
         return value === this.value;
     }
 

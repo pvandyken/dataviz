@@ -53,14 +53,17 @@ constructor(props) {
         const values = this.props.categories[0].values;
         const activeItems = values.filter(item => {
             if (this.state.activeDimensions) {
-                for (let dim of this.state.activeDimensions) {
+                const active = this.state.activeDimensions.map(dim => {
                     const itemDimValue = item.dimensions[dim.name]
                     if (!itemDimValue) {
                         return false;
                     } else if (dim.value.contains(itemDimValue)) {
                         return true;
                     }
-                }
+                    return false;
+                })
+                console.log(active.every(item=> item))
+                return active.every(item => item)
             }
             return false;
         })

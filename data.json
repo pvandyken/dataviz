@@ -29,9 +29,10 @@
             "name": "slice",
             "type": "number",
             "possibleValues": [
-                0,
+                
                 1,
-                2
+                2,
+                3
             ]
         }
     ],
@@ -50,7 +51,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100307,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T1w",
                         "view": "axial"
                     },
@@ -86,7 +87,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100307,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T1w",
                         "view": "sagittal"
                     },
@@ -122,7 +123,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100307,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T1w",
                         "view": "coronal"
                     },
@@ -158,7 +159,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100307,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T2w",
                         "view": "axial"
                     },
@@ -194,7 +195,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100307,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T2w",
                         "view": "sagittal"
                     },
@@ -230,7 +231,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100307,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T2w",
                         "view": "coronal"
                     },
@@ -266,7 +267,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100408,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T1w",
                         "view": "axial"
                     },
@@ -302,7 +303,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100408,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T1w",
                         "view": "sagittal"
                     },
@@ -338,7 +339,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100408,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T1w",
                         "view": "coronal"
                     },
@@ -374,7 +375,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100408,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T2w",
                         "view": "axial"
                     },
@@ -410,7 +411,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100408,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T2w",
                         "view": "sagittal"
                     },
@@ -446,7 +447,7 @@
                     "type": "image",
                     "dimensions": {
                         "subject": 100408,
-                        "slice": 0,
+                        "slice": 3,
                         "contrast": "T2w",
                         "view": "coronal"
                     },
