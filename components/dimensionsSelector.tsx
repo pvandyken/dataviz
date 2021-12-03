@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { ActiveDimension, DimensionTypes } from "../interfaces/dimensions"
+import {Slice} from '../lib/slice'
 
 interface DimSelectorProps {
     dimension: ActiveDimension<DimensionTypes>,
@@ -14,12 +15,12 @@ export const DimSelector = (props: DimSelectorProps) => {
             </a>
             <ul className="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end" aria-labelledby="navbarDarkDropdownMenuLink">
                 <li key="all">
-                    <a className={"dropdown-item " + (props.dimension.value.value ? "" : "active")} href="#" onClick={(e) => props.setDimensionSlice(props.dimension, {value: null}, e)}>All</a>
+                    <a className={"dropdown-item " + (props.dimension.value.value ? "" : "active")} href="#" onClick={(e) => props.setDimensionSlice(props.dimension, new Slice(null), e)}>All</a>
                 </li>
                 {
                     props.dimension.possibleValues.map(posibleVal => {
                         return <li key={posibleVal}>
-                            <a className={"dropdown-item " + (props.dimension.value.value === posibleVal ? "active" : "")} href="#" onClick={(e) => props.setDimensionSlice(props.dimension, {value: posibleVal}, e)}>{posibleVal}</a>
+                            <a className={"dropdown-item " + (props.dimension.value.value === posibleVal ? "active" : "")} href="#" onClick={(e) => props.setDimensionSlice(props.dimension, new Slice(posibleVal), e)}>{posibleVal}</a>
                         </li>
                     })
                 }

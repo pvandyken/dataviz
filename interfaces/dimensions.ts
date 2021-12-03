@@ -1,4 +1,5 @@
 import { Slice } from "../lib/slice";
+import { Data, Img } from "./data";
 
 export type DimensionTypes = string | number;
 
@@ -16,7 +17,8 @@ export interface Category {
     id: string;
     name: string;
     parent?: string;
-    dimensions: Dimension<DimensionTypes>[]
+    dimensions: Dimension<DimensionTypes>[];
+    values: Data<Img>[];
 }
 
 
