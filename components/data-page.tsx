@@ -38,18 +38,32 @@ export const DataPage = ({activeDimensions, data}: DataPageProps) => {
 
     const slicedDimensions = getSlicedDimensions(activeDimensions);
     
-    const markup = activeItems.map(item => {
+    const markup = activeItems.map((item, i) => {
         if (item.type !== "img") {
             return null;
         }
-        const labels = slicedDimensions.map(dimension => {
-            return item.dimensions[dimension]
+        const labels = slicedDimensions.map((dimension, i) => {
+            return <p key={i}>{item.dimensions[dimension]}</p>
         })
+        const properties = (item as Data<Img>).properties;
         return (
-            <Image src={(item as Data<Img>).properties.path}/>
+            <div key={i} className="col">
+                <Image 
+                    src={properties.path}
+                    height={properties.height}
+                    width={properties.width}
+                />
+                {labels}
+            </div>
         )
 
     })
+
+    return (
+        <div className="container">
+            <div className="row">{markup}</div>
+        </div>
+    )
 
     
 }
