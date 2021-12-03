@@ -4,6 +4,8 @@ import React from "react"
 interface CategorySelectorProps {
     categories: Category[];
     setActiveDimensions;
+    setActiveCategory;
+    activeCategory: Category | undefined;
 }
 
 interface CategoryOptionProps {
@@ -28,22 +30,21 @@ class CategoryOption extends React.Component<CategoryOptionProps, {}> {
     }
 }
 
-class CategorySelector extends React.Component<CategorySelectorProps, {activeCategory: any}> {
+class CategorySelector extends React.Component<CategorySelectorProps> {
     constructor(props: CategorySelectorProps) {
         super(props);
-        this.state = {activeCategory: null};
 
         this.changeActive = this.changeActive.bind(this)
     }
 
     changeActive(category) {
-        this.setState({activeCategory: category});
+        this.props.setActiveCategory(category);
         this.props.setActiveDimensions(category.dimensions.map((dimension) => {return {value: dimension.possibleValues[0], ...dimension}}))
     }
 
     render() {
         const categoryItems = this.props.categories.map((category, index) =>
-            <CategoryOption key={index} category={category} setActiveCategory={this.changeActive} active={category === this.state.activeCategory} />
+            <CategoryOption key={index} category={category} setActiveCategory={this.changeActive} active={category === this.props.activeCategory} />
         );
         return (
             <nav>
