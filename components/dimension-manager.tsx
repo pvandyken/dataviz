@@ -82,6 +82,7 @@ constructor(props) {
                         />
                     </div>
                     <div className="col-9">
+                        <h1 className="display-1">Dataviz</h1>
                         {
                             this.state.activeDimensions &&
                             <DataPage 
@@ -89,9 +90,6 @@ constructor(props) {
                                 activeItems={activeItems}
                             />
                         }
-                        <h1 className="display-1">Dataviz</h1>
-                        <p>This is the main body of the page.</p>
-                        <p>Active dimensions: {this.state.activeDimensions ? this.state.activeDimensions.map((dimension) => dimension.name).join(", ") : "None yet."}</p>
                     </div>
                 </div>
             </div>
