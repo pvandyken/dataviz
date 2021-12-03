@@ -22,12 +22,10 @@ export const DimSelector = (props: DimSelectorProps) => {
                 <input value={val} onChange={setValue} />
                 {
                     props.dimension.possibleValues.map(posibleVal => {
-                        //return <li><a className="dropdown-item" href="#" key={posibleVal}>{posibleVal} </a></li>
-
 
                         return <li key={posibleVal}>
-                            <input type="checkbox" class="btn-check" id={String(posibleVal)} autocomplete="off">
-                            <label class ="btn btn-outline-primary" for="btn-check-outlined">{posibleVal}</label>
+                            <input type="checkbox" className="btn-check" id={String(posibleVal)} autocomplete="off" />
+                            <label className ="btn btn-outline-primary" for="btn-check-outlined">{posibleVal}</label>
                         </li>
                     })
                 }

@@ -17,7 +17,7 @@ export const DimensionManager = (props: DimensionManagerProps) => {
     return (
         <div className="container">
             <div className="row">
-                <Navbar/>
+                <Navbar setActiveDimensions="{SEND_HELP}"/>
             </div>
             <div className="row">
                 <div className="col-3">

@@ -8,11 +8,6 @@ interface NavBarProps {
 }
 
 export const Navbar = (props: NavBarProps) => {
-    const [val, setVal] = useState(props.activeDimensions[0].value)
-    const setValue = (e) => {
-        setVal(e.target.value)
-    }
-
     return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container-fluid justify-content-end">
