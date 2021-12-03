@@ -1,3 +1,7 @@
+import { useState } from "react"
+import { DimSelector } from "./dimensionsSelector"
+import { ActiveDimension, DimensionTypes } from "../interfaces/dimensions"
+
 interface NavBarProps {
     activeDimensions:  ActiveDimension<DimensionTypes>[]
 
