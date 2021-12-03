@@ -39,7 +39,7 @@ class CategorySelector extends React.Component<CategorySelectorProps> {
 
     changeActive(category) {
         this.props.setActiveCategory(category);
-        this.props.setActiveDimensions(category.dimensions.map((dimension) => {return {value: dimension.possibleValues[0], ...dimension}}))
+        //this.props.setActiveDimensions(category.dimensions.map((dimension) => {return {value: dimension.possibleValues[0], ...dimension}}))
     }
 
     render() {
