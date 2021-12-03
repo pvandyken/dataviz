@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import { DimensionManager } from '../components/dimension-manager'
 import { Category, Dimension } from "../interfaces/dimensions"
+import { Navbar } from '../components/navbar'
 
 
 const dimension1: Dimension<number> = {name: "dimension1", possibleValues: [1, 2], type: "idk"} 
@@ -23,7 +24,9 @@ const exampleProps = [
 
 const Home: NextPage = () => {
     return (
+      <div className="app">
         <DimensionManager categories={exampleProps} />
+      </div>
     )
 }
 

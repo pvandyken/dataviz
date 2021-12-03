@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { ActiveDimension, Category, DimensionTypes } from "../interfaces/dimensions"
 import { CategorySelector } from "./category-selector"
+import { Navbar } from "./navbar"
 
 type ActiveDimensions = ActiveDimension<DimensionTypes>[] | undefined;
 
