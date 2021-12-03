@@ -57,6 +57,426 @@
                     "properties": {
                         "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-axial_slice-0_T1w.svg"
                     }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 1,
+                        "contrast": "T1w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-axial_slice-1_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 2,
+                        "contrast": "T1w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-axial_slice-2_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 0,
+                        "contrast": "T1w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-sagittal_slice-0_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 1,
+                        "contrast": "T1w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-sagittal_slice-1_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 2,
+                        "contrast": "T1w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-sagittal_slice-2_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 0,
+                        "contrast": "T1w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-coronal_slice-0_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 1,
+                        "contrast": "T1w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-coronal_slice-1_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 2,
+                        "contrast": "T1w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-coronal_slice-2_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 0,
+                        "contrast": "T2w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-axial_slice-0_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 1,
+                        "contrast": "T2w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-axial_slice-1_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 2,
+                        "contrast": "T2w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-axial_slice-2_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 0,
+                        "contrast": "T2w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-sagittal_slice-0_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 1,
+                        "contrast": "T2w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-sagittal_slice-1_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 2,
+                        "contrast": "T2w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-sagittal_slice-2_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 0,
+                        "contrast": "T2w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-coronal_slice-0_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 1,
+                        "contrast": "T2w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-coronal_slice-1_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100307,
+                        "slice": 2,
+                        "contrast": "T2w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100307/anat/sub-100307_acq-procHCP_desc-coronal_slice-2_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 0,
+                        "contrast": "T1w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-axial_slice-0_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 1,
+                        "contrast": "T1w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-axial_slice-1_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 2,
+                        "contrast": "T1w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-axial_slice-2_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 0,
+                        "contrast": "T1w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-sagittal_slice-0_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 1,
+                        "contrast": "T1w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-sagittal_slice-1_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 2,
+                        "contrast": "T1w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-sagittal_slice-2_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 0,
+                        "contrast": "T1w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-coronal_slice-0_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 1,
+                        "contrast": "T1w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-coronal_slice-1_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 2,
+                        "contrast": "T1w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-coronal_slice-2_T1w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 0,
+                        "contrast": "T2w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-axial_slice-0_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 1,
+                        "contrast": "T2w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-axial_slice-1_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 2,
+                        "contrast": "T2w",
+                        "view": "axial"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-axial_slice-2_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 0,
+                        "contrast": "T2w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-sagittal_slice-0_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 1,
+                        "contrast": "T2w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-sagittal_slice-1_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 2,
+                        "contrast": "T2w",
+                        "view": "sagittal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-sagittal_slice-2_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 0,
+                        "contrast": "T2w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-coronal_slice-0_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 1,
+                        "contrast": "T2w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-coronal_slice-1_T2w.svg"
+                    }
+                },
+                {
+                    "type": "image",
+                    "dimensions": {
+                        "subject": 100408,
+                        "slice": 2,
+                        "contrast": "T2w",
+                        "view": "coronal"
+                    },
+                    "properties": {
+                        "path": "data/sub-100408/anat/sub-100408_acq-procHCP_desc-coronal_slice-2_T2w.svg"
+                    }
                 }
             ]
         }
