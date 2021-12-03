@@ -48,4 +48,7 @@ const Home: NextPage = ({fullCategories}: InferGetStaticPropsType<typeof getStat
     )
 }
 
+
+
+
 export default Home

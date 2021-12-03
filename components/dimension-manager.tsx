@@ -4,6 +4,7 @@ import { Data, Img } from "../interfaces/data";
 import { ActiveDimension, Category, DimensionTypes } from "../interfaces/dimensions"
 import { Slice } from '../lib/slice';
 import { CategorySelector } from "./category-selector"
+import { Navbar } from "./navbar"
 import { DataPage } from "./data-page";
 
 type ActiveDimensions = ActiveDimension<DimensionTypes>[] | undefined;
@@ -20,22 +21,22 @@ interface DimensionManagerState {
 
 export class DimensionManager extends React.Component<DimensionManagerProps, DimensionManagerState> {
 
-    constructor(props) {
+constructor(props) {
         super(props)
         this.state = {
             activeDimensions: undefined,
             activeCategory: undefined
         }
-        this.setActiveDimensions = this.setActiveDimensions.bind(this)
         this.setActiveCategory = this.setActiveCategory.bind(this)
+        this.setDimensionSlice = this.setDimensionSlice.bind(this)
     }
 
-    setActiveDimensions(value: ActiveDimensions) {
+    setDimensionSlice(dimension, slice) {
+        dimension = {...dimension, value: slice};
         this.setState({
             ...this.state,
-            activeDimensions: value
+            activeDimensions: this.state.activeDimensions.map((activeDimension) => activeDimension.name === dimension.name ? dimension : activeDimension)
         })
-        
     }
 
     setActiveCategory(value: Category) {
@@ -45,11 +46,10 @@ export class DimensionManager extends React.Component<DimensionManagerProps, Dim
             activeCategory: value,
             activeDimensions: activeDimensions
         })
-        
-        
     }
 
     render() {
+        console.log(this.state.activeDimensions)
         const values = this.props.categories[0].values;
         const activeItems = values.filter(item => {
             if (this.state.activeDimensions) {
@@ -68,10 +68,12 @@ export class DimensionManager extends React.Component<DimensionManagerProps, Dim
         return (
             <div className="container">
                 <div className="row">
+                    <Navbar activeDimensions={this.state.activeDimensions} setDimensionSlice={this.setDimensionSlice} />
+                </div>
+                <div className="row">
                     <div className="col-3">
                         <CategorySelector 
                             categories={this.props.categories} 
-                            setActiveDimensions={this.setActiveDimensions} 
                             setActiveCategory={this.setActiveCategory}
                             activeCategory={this.state.activeCategory}
                         />
