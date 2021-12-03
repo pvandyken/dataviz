@@ -1,4 +1,7 @@
 import type { NextPage } from 'next'
+import type { InferGetStaticPropsType } from 'next'
+import path from 'path'
+import { promises as fs } from 'fs'
 import { DimensionManager } from '../components/dimension-manager'
 import { Category, Dimension } from "../interfaces/dimensions"
 
@@ -20,11 +23,30 @@ const exampleProps = [
     category2
 ]
 
-const Home: NextPage = () => {
+export const getStaticProps = async () => {
+    const dataFile = path.join(process.cwd(), 'data.json');
+    const dataObject = await fs.readFile(dataFile, 'utf-8');
+    const data = await JSON.parse(dataObject);
+    return {
+        props: data
+    }
+}
+
+const Home: NextPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
+    const fullCategories = props.categories.map((category) => {
+        return {
+            id: category.id,
+            name: category.name,
+            values: category.values,
+            dimensions: category.dimensions.map(
+                (dimension) => props.dimensions.filter(
+                    (el) => el.name === dimension
+                )[0]
+            )
+        }
+    })
     return (
-      <div className="app">
-        <DimensionManager categories={exampleProps} />
-      </div>
+        <DimensionManager categories={fullCategories} />
     )
 }
 
