@@ -12,8 +12,12 @@ interface CategoryOptionProps {
     setActiveCategory;
 }
 
-class CategoryOption extends React.Component {
+class CategoryOption extends React.Component<CategoryOptionProps, {}> {
+    constructor(props: CategoryOptionProps) {
+        super(props);
+    }
     render() {
+        
         return (
             <li className="nav-item">
                 <a className={"nav-link " + (this.props.active ? "active" : "")} href="#" onClick={(e) => this.props.setActiveCategory(this.props.category, e)}>
@@ -24,7 +28,7 @@ class CategoryOption extends React.Component {
     }
 }
 
-class CategorySelector extends React.Component {
+class CategorySelector extends React.Component<CategorySelectorProps, {activeCategory: any}> {
     constructor(props: CategorySelectorProps) {
         super(props);
         this.state = {activeCategory: null};
@@ -38,8 +42,8 @@ class CategorySelector extends React.Component {
     }
 
     render() {
-        const categoryItems = this.props.categories.map((category) =>
-            <CategoryOption category={category} parent={this} setActiveCategory={this.changeActive} active={category === this.state.activeCategory} />
+        const categoryItems = this.props.categories.map((category, index) =>
+            <CategoryOption key={index} category={category} setActiveCategory={this.changeActive} active={category === this.state.activeCategory} />
         );
         return (
             <nav>

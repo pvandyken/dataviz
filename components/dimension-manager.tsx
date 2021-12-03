@@ -17,7 +17,7 @@ export const DimensionManager = (props: DimensionManagerProps) => {
         <div className="container">
             <div className="row">
                 <div className="col-3">
-                    <CategorySelector className="col-3" categories={props.categories} setActiveDimensions={setActiveDimensions} />
+                    <CategorySelector categories={props.categories} setActiveDimensions={setActiveDimensions} />
                 </div>
                 <div className="col-9">
                     <h1 className="display-1">Dataviz</h1>
