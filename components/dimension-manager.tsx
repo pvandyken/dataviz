@@ -33,7 +33,7 @@ export const DimensionManager = (props: DimensionManagerProps) => {
                 <div className="col-9">
                     <h1 className="display-1">Dataviz</h1>
                     <p>This is the main body of the page.</p>
-                    <p>Active dimensions: {activeDimensions ? activeDimensions.map((dimension) => dimension.value).join(", ") : "None yet."}</p>
+                    <p>Active dimensions: {activeDimensions ? activeDimensions.map((dimension) => dimension.value.value).join(", ") : "None yet."}</p>
                 </div>
             </div>
         </div>
