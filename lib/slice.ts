@@ -6,24 +6,27 @@ export class Slice<T extends DimensionTypes> {
     * Dimension, so Dimension should not be an argument in the constructor
     */
 
+    value?: DimensionTypes
+
     constructor(values?: T) {
         /**
          * If no value passed to constructor, assume the slice covers all possible values
          */
-
+        this.value = values;
     }
 
     contains(value: T) {
         /**
          * Test if slice contains value
          */
-        return true;
+        return value === this.value;
     }
 
     isSingle() {
         /**
          * Return true if slice is a single value: aka not "all"
          */
+        return Boolean(this.value)
     }
 }
 
